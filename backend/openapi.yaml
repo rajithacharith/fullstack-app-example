@@ -5,12 +5,12 @@ info:
   description: API for the backend component of the fullstack app example.
 servers:
   - url: http://localhost:5000
-security: []
 paths:
   /api/project:
     get:
       summary: Get project information
       description: Returns information about the project and student.
+      security: []
       responses:
         '200':
           description: Successful response
