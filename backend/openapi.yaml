@@ -1,0 +1,33 @@
+openapi: 3.0.3
+info:
+  title: Backend API
+  version: 1.0.0
+  description: API for the backend component of the fullstack app example.
+servers:
+  - url: http://localhost:5000
+security: []
+paths:
+  /api/project:
+    get:
+      summary: Get project information
+      description: Returns information about the project and student.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  studentName:
+                    type: string
+                    example: Smith, John
+                  projectName:
+                    type: string
+                    example: Weather App
+                  projectUrl:
+                    type: string
+                    example: http://10.0.0.1:3000/
+                  projectDescription:
+                    type: string
+                    example: This application provides real-time weather updates for any location worldwide.
