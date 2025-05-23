@@ -1,6 +1,6 @@
 // Import React and hooks for managing state and side effects
 import React, { useState, useEffect } from 'react';
-import config from '../public/config.js';
+import { apiUrl } from './constants';
 
 function App() {
   // Create a state variable `projectData` to store the project information
@@ -10,7 +10,7 @@ function App() {
   // useEffect is a React hook that runs side effects, such as fetching data
   useEffect(() => {
     // Fetch data from the backend API endpoint
-    fetch(`${config.API_BASE_URL}/api/project`)
+    fetch(`${apiUrl}/api/project`)
       .then((response) => response.json()) // Convert the API response to JSON
       .then((data) => setProjectData(data)); // Update the state with the fetched data
   }, []); // Empty dependency array ensures this runs only once after the component mounts
