@@ -1,6 +1,6 @@
 // Import React and hooks for managing state and side effects
 import React, { useState, useEffect } from 'react';
-import config from './config';
+import config from '../public/config.js';
 
 function App() {
   // Create a state variable `projectData` to store the project information
