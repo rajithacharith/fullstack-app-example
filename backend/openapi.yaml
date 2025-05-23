@@ -10,7 +10,7 @@ paths:
     get:
       summary: Get project information
       description: Returns information about the project and student.
-      security: []
+      x-auth-type: "None"
       responses:
         '200':
           description: Successful response
