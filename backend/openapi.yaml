@@ -5,6 +5,7 @@ info:
   description: API for the backend component of the fullstack app example.
 servers:
   - url: http://localhost:5000
+x-wso2-disable-security: true
 paths:
   /api/project:
     get:
