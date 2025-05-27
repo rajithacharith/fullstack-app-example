@@ -8,7 +8,7 @@ const cors = require('cors');
 const app = express();
 
 // Set the port for the server to listen on, using an environment variable if available, or defaulting to 5000
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 // Use the CORS middleware to enable cross-origin requests from any origin
 app.use(cors());
